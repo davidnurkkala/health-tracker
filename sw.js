@@ -6,7 +6,7 @@
    deploy lands on the second launch even if the bump is forgotten. */
 "use strict";
 
-var VERSION = "cadence-v3";
+var VERSION = "cadence-v4";
 var ASSETS = [
   "./",
   "./index.html",
