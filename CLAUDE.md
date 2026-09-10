@@ -23,9 +23,8 @@ hungry. Fewer boundaries, less drift.
 
 **Round-up rule.** Anything between two tiers is charged as the bigger one.
 This is the single most important line in the design — it removes the judgment
-call and biases it against the user by default. It used to be printed above the
-tiles; the owner removed the explanatory copy, so the rule now lives here and in
-his head rather than on screen. It still governs how tiers are charged.
+call and biases it against the user by default. It is on screen above the tiles,
+reduced to "When in doubt, round up." — the rule without the explanation.
 
 **Overage borrows forward.** Going over drops the balance negative and it
 refills from there. There is no penalty, no streak to break, no "ruined week."
@@ -49,7 +48,8 @@ advance.
 
 **The UI carries no explanatory copy.** Purpose, rationale and coaching notes
 were deliberately stripped — the owner built the thing and does not need it
-narrated back. Labels, values and controls only. Don't reintroduce helper text.
+narrated back. Labels, values, controls, and the one round-up line. Don't
+reintroduce helper text.
 
 **Nothing that awards, scores, streaks, or congratulates.**
 
