@@ -42,16 +42,8 @@
     letter-spacing:-0.01em;
     margin:0;
   }
-  .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+  .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px}
   .head .date{color:var(--muted);font-size:13px}
-
-  .rule{
-    color:var(--muted);
-    font-size:13px;
-    border-left:2px solid var(--edge);
-    padding-left:10px;
-    margin:16px 0 20px;
-  }
 
   .tile{
     background:var(--panel);
@@ -123,7 +115,6 @@
     resize:vertical;min-height:62px;padding:0;line-height:1.5;
   }
   .plan textarea:focus{outline:none}
-  .plan .hint{color:var(--muted);font-size:12.5px;margin-bottom:8px}
 
   details{margin-top:30px;border-top:1px solid var(--edge);padding-top:14px}
   summary{color:var(--muted);font-size:13.5px;cursor:pointer;list-style:none}
@@ -137,7 +128,6 @@
     color:var(--text);font:inherit;font-size:14px;padding:7px 9px;text-align:right;
   }
   .setrow input:focus{outline:none;border-color:var(--cool)}
-  .setnote{color:var(--muted);font-size:12.5px;margin-top:16px;line-height:1.5}
   .danger{background:none;border:1px solid var(--edge);color:var(--warn);font:inherit;
     font-size:13px;border-radius:9px;padding:9px 14px;margin-top:16px;cursor:pointer}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -149,8 +139,6 @@
   <h1>Cadence</h1>
   <div class="date" id="today"></div>
 </div>
-
-<p class="rule">Decided in advance. Nothing is earned and nothing carries over. When something sits between two tiers, charge the bigger one.</p>
 
 <div id="undoSlot"></div>
 <div id="tiles"></div>
@@ -167,7 +155,6 @@
 <section>
   <h2>If it's a rough day</h2>
   <div class="plan">
-    <div class="hint">Written while calm. This is the one the buttons can't answer.</div>
     <textarea id="plan" placeholder="If &hellip; then I will &hellip;"></textarea>
   </div>
 </section>
@@ -175,7 +162,6 @@
 <details>
   <summary>Adjust cadence</summary>
   <div id="settings"></div>
-  <p class="setnote">Change these against the 30&#8209;day trend, roughly monthly &mdash; not against a single week. If the trend is flat, lengthen a refill.</p>
   <button class="danger" id="reset">Erase all data</button>
 </details>
 
