@@ -49,6 +49,6 @@ advance.
 
 ## Deploy
 
-Pushing to `main` deploys the repo root to GitHub Pages. That needs a setting
-made by hand, once, outside the repo: **Settings → Pages → Source: GitHub
-Actions**. Until it is set, the workflow fails at `configure-pages`.
+Pushing to `main` deploys the repo root to GitHub Pages, at
+<https://davidnurkkala.github.io/health-tracker/>. The workflow turns Pages on
+itself via `enablement: true`, so there is no setting to flip by hand.
