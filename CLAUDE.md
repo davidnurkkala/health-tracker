@@ -50,5 +50,9 @@ advance.
 ## Deploy
 
 Pushing to `main` deploys the repo root to GitHub Pages, at
-<https://davidnurkkala.github.io/health-tracker/>. The workflow turns Pages on
-itself via `enablement: true`, so there is no setting to flip by hand.
+<https://davidnurkkala.github.io/health-tracker/>.
+
+Pages must be switched on once by hand, under **Settings → Pages → Source:
+GitHub Actions**. There is no way to automate it: the Actions token is not
+permitted to create a Pages site. Until it is set, every run fails at
+`configure-pages` with "Get Pages site failed".
